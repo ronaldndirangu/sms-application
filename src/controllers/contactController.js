@@ -8,7 +8,7 @@ module.exports = {
       const contact = await Contact.findOne({ where: { id }, 
         include : [{
           model: Message,
-          as: 'messages',
+          as: 'sentMessages',
         }]
       });
       if (!contact) return res.status(404).json({
