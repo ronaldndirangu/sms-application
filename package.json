@@ -6,7 +6,7 @@
   "author": "Ronald Ndirangu <ronald.ndirangu@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "db:rollback": "node_modules/.bin/sequelize db:migrate:undo:all",
     "db:migrate": "node_modules/.bin/sequelize db:migrate",
     "db:rollmigrate": "node_modules/.bin/sequelize db:migrate:undo:all && node_modules/.bin/sequelize db:migrate"
@@ -23,7 +23,5 @@
     "sequelize": "^5.10.2",
     "sequelize-cli": "^5.5.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  }
+  "devDependencies": {}
 }
